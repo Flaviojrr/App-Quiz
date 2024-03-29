@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question1"
+    android:background="@color/Light_Cyan">
+        <ImageView
+            android:id="@+id/ActivityQuestion1_ImageView_ImageQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vector_asset_quiz"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/ActivityQuestion1_TextView_Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/10"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:background="@color/Air_Force_blue"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ActivityQuestion1_ImageView_ImageQuiz"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/ActivityQuestion1_TextView_Question"
+            android:background="@color/Air_Force_blue"
+            android:textColor="@color/white"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Question1"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/ActivityQuestion1_TextView_Score"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="60dp"
+            android:padding="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/ActivityQuestion1_RadioGroup_ResponseGroup"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ActivityQuestion1_TextView_Question"
+        app:layout_constraintVertical_bias="0.276">
+
+        <RadioButton
+            android:id="@+id/ActivityQuestion1_RadioButton_Response1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Dark_Spring_Green"
+            android:text="Platão"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            tools:ignore="MissingConstraints" />
+
+        <RadioButton
+            android:id="@+id/ActivityQuestion1_RadioButton_Response2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Light_Blue"
+            android:text="Galileu Galilei"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            tools:ignore="MissingConstraints" />
+
+        <RadioButton
+            android:id="@+id/ActivityQuestion1_RadioButton_CorrectResponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Jade"
+            android:text="Descartes"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            tools:ignore="MissingConstraints" />
+
+        <RadioButton
+            android:id="@+id/ActivityQuestion1_RadioButton_Response4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Ruddy_Blue"
+            android:text="Sócrates"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/ActivityQuestion1_Button_SendResponse"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Air_Force_blue"
+        android:text="Enviar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/ActivityQuestion1_RadioGroup_ResponseGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

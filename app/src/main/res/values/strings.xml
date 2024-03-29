@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppQuiz</string>
+    <string name="textFistAcitivity">Bem vindo ao quiz sobre conhecimentos gerais.</string>
+    <string name="Play">Jogar</string>
+    <string name="Question1">De quem é a famosa frase “Penso, logo existo”?</string>
+    <string name="Question2">Quantas casas decimais tem o número pi?</string>
+    <string name="Question3">Qual o número mínimo de jogadores em cada time numa partida de futebol?</string>
+    <string name="Question4">Em que ordem surgiram os modelos atômicos?</string>
+    <string name="Question5">" Quais destas construções famosas ficam nos Estados Unidos?"</string>
+    <string name="Question6">" Quais os planetas do sistema solar?"</string>
+</resources>

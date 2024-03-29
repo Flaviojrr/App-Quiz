@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#0E20E8</color>
+    <color name="Light_Cyan">#d1faff</color>
+    <color name="Light_Blue">#9db1e5</color>
+    <color name="Air_Force_blue">#6a8eae</color>
+    <color name="Jade">#57a773</color>
+    <color name="Dark_Spring_Green">#157145</color>
+    <color name="Ruddy_Blue">#5da6e6</color>
+</resources>

@@ -12,6 +12,7 @@ class Question5 : AppCompatActivity() {
     private lateinit var myButton: Button
     private lateinit var myRadioGroup: RadioGroup
     private lateinit var myCorrectResponse : RadioButton
+    private var myPunctuation : Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question5)
@@ -21,6 +22,7 @@ class Question5 : AppCompatActivity() {
         myButton.setOnClickListener{
             var myRadioButton = myRadioGroup.checkedRadioButtonId
             if(myRadioButton!=-1 && myRadioButton == myCorrectResponse.id){
+                myPunctuation = intent.getIntExtra("Punctuation_Quiz",myPunctuation)
                 exibirPopUp()
             }
         }

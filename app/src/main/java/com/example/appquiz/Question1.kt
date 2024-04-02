@@ -14,6 +14,7 @@ class Question1 : AppCompatActivity() {
     private lateinit var myButton: Button
     private lateinit var myRadioGroup: RadioGroup
     private lateinit var myCorrectResponse : RadioButton
+    private var myPunctuation : Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question1)
@@ -23,6 +24,7 @@ class Question1 : AppCompatActivity() {
         myButton.setOnClickListener{
             var myRadioButton = myRadioGroup.checkedRadioButtonId
             if(myRadioButton!=-1 && myRadioButton == myCorrectResponse.id){
+                myPunctuation = intent.getIntExtra("Punctuation_Quiz",myPunctuation)
                 exibirPopUp()
             }
         }
@@ -32,7 +34,10 @@ class Question1 : AppCompatActivity() {
         builder.setTitle("Resultado!!!")
         builder.setMessage("Respota Correta")
         builder.setPositiveButton("OK") { dialog, which ->
-            startActivity(Intent(this,Question2::class.java))
+            val intent = Intent(this, Question2::class.java).apply {
+                putExtra("Puctuantion_Quiz",myPunctuation)
+            }
+            startActivity(intent)
             dialog.dismiss() // Fecha o pop-up
         }
         val dialog = builder.create()
